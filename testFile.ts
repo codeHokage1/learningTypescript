@@ -9,17 +9,22 @@ let loginUser = (username: string, password: string): boolean => {
 };
 
 type User = {
-   username: string;
-   password: string;
-}
+	username: string;
+	password: string;
+};
 
 let createUser = (user: User): boolean => {
-   if (user.username && user.password) {
-      return true;
-   }
-   return false;
-}
+	if (user.username && user.password) {
+		return true;
+	}
+	return false;
+};
 
-createUser({username: "admin", password: "admin"});
+const arr: string[] = [];
+arr.push("hello");
 
+const allUsers: User[] = [];
+allUsers.push({username: "Jide", password: "123"})
+
+console.log(createUser({ username: "admin", password: "admin" }));
 export {};
